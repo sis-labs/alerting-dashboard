@@ -9,9 +9,16 @@ import DynamicRoutePage from '../pages/dynamic-route.vue';
 import RequestAndLoad from '../pages/request-and-load.vue';
 import NotFoundPage from '../pages/404.vue';
 
+import TrackersPage from '../pages/trackers.vue';
+import SettingsPage from '../pages/settings.vue';
+
 var routes = [
   {
     path: '/',
+    component: HomePage,
+  },
+  {
+    path: '/home/',
     component: HomePage,
   },
   {
@@ -19,10 +26,17 @@ var routes = [
     component: AboutPage,
   },
   {
+    path: '/trackers/',
+    component: TrackersPage
+  },
+  {
+    path: '/settings/',
+    component: SettingsPage,
+  },
+  {
     path: '/form/',
     component: FormPage,
   },
-
   {
     path: '/left-page-1/',
     component: LeftPage1,
