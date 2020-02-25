@@ -10,7 +10,14 @@
 
     <!-- Page content-->
     <f7-block strong>
-      <p>{{content}}</p>
+      <f7-row>
+        <f7-col>50% (.col)</f7-col>
+        <f7-col>50% (.col)</f7-col>
+      </f7-row>
+      <f7-row>
+        <f7-col>50% (.col)</f7-col>
+        <f7-col>{{content}}</f7-col>
+      </f7-row>
     </f7-block>
 
   </f7-page>

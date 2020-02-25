@@ -24,6 +24,34 @@
 
       <p>The fun thing is that you can easily control one view from another without any line of JavaScript just using "data-view" attribute on links.</p>
     </f7-block>
+    <f7-block>
+      <f7-block-title>Circle Gauges</f7-block-title>
+      <f7-block strong>
+        <f7-row>
+          <f7-col class="text-align-center">
+            <f7-gauge
+              type="circle"
+              :value="0.44"
+              value-text="44%"
+              value-text-color="#ff9800"
+              border-color="#ff9800"
+            ></f7-gauge>
+          </f7-col>
+          <f7-col class="text-align-center">
+            <f7-gauge
+              type="circle"
+              :value="0.12"
+              value-text="$120"
+              value-text-color="#4caf50"
+              border-color="#4caf50"
+              label-text="of $1000 budget"
+              label-text-color="#f44336"
+              :label-font-weight="700"
+            ></f7-gauge>
+          </f7-col>
+        </f7-row>
+      </f7-block>
+    </f7-block>
 
     <f7-block-title>Navigation</f7-block-title>
     <f7-list>
